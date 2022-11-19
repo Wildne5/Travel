@@ -1,0 +1,260 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../img/people-gdfa30813b_640.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.hero-img-dark {
+  position: absolute;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+.hero-img-box {
+  z-index: 2;
+}
+.hero-img-box-padding {
+  margin-top: 1.5em;
+}
+.hero-img-box-padding-a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.hero-img-box-padding-a:before {
+  content: "";
+  border-bottom: 1px solid white;
+  transition: 1s;
+}
+.hero-img-box-padding-a:hover {
+  border: none;
+}
+.hero-img__title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  padding: 0.5em;
+}
+.hero-img__text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+.hero-img__button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #Ed4933;
+  margin-top: 2.5em;
+  padding: 1em;
+  font-weight: bold;
+  max-width: 15em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+}
+.hero-img hr {
+  margin: 0 auto;
+  width: 24em;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+.hero-img-more {
+  position: absolute;
+  bottom: 5em;
+  z-index: 10;
+}
+.hero-img-more-btn {
+  border: 1px solid #5ac8fb;
+  background: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+.hero-img-more-btn:hover {
+  background-color: #5ac8fb;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  text-align: center;
+}
+.section-blue {
+  background-color: #21b1a6;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding: 15em;
+}
+.section-blue-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.section-blue-icon {
+  height: 4em;
+  width: 4em;
+}
+.section-blue com-img {
+  height: 1em;
+  width: 1em;
+}
+.section-text {
+  width: 80%;
+}
+.section-text hr {
+  border: 0.1px solid #808080;
+  opacity: 0.3;
+}
+.section-about {
+  height: 50vh;
+  width: 100vw;
+  text-align: center;
+  background-color: #2b343d;
+}
+.sectionfirst {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+}
+.sectionfirst-box {
+  height: 30vh;
+  text-align: center;
+}
+.sectionfirst-box-img {
+  width: 10em;
+  height: 10em;
+}
+
+@media (max-width: 375px) {
+  .section-blue {
+    height: 70vh;
+    padding: 0%;
+  }
+  .section-blue h2 {
+    font-size: 1.2em;
+  }
+  .section-blue p {
+    font-size: 1em;
+  }
+  .hero-img-box hr {
+    margin: 0 auto;
+    width: 20em;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+}
+@media (min-width: 375px) {
+  .section-blue {
+    height: 70vh;
+    padding: 0%;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+  .section-blue-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .section-blue-icon {
+    height: 4em;
+    width: 4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .hero-img__title {
+    font-size: 3rem;
+  }
+  .hero-img__text {
+    font-size: 2rem;
+  }
+  .hero-img__button {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .section-blue {
+    height: 70vh;
+    padding: 0%;
+  }
+  .section-blue h2 {
+    font-size: 1.2em;
+  }
+  .section-blue p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 992px) {
+  .section-blue h2 {
+    font-size: 1.2em;
+  }
+  .section-blue p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-img__title {
+    font-size: 3.5rem;
+  }
+  .hero-img__text {
+    font-size: 2rem;
+  }
+  .hero-img__button {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .section-blue {
+    padding: 10em;
+  }
+  .section-blue h2 {
+    font-size: 1.5em;
+  }
+  .section-blue p {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=style.css.map */
