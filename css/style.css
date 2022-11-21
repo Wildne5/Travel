@@ -1,1 +1,182 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+}
+
+.header .hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url(../img/header_small.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.header .hero-img-dark {
+  position: absolute;
+  top: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+.header .hero-box {
+  text-align: left;
+  z-index: 3;
+  width: 25em;
+}
+.header .hero-box-text {
+  font-size: 2em;
+}
+.header .hero-box-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  color: white;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  background-color: #db545a;
+  cursor: pointer;
+}
+.header .hero-box-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.section {
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  color: #32323b;
+  background-color: #f2f2f2;
+}
+.section-box img {
+  overflow: hidden;
+  max-width: 100%;
+}
+.section-box p {
+  text-align: center;
+  padding: 1.2em;
+  font-size: 2em;
+}
+.section-carton {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  z-index: 3;
+}
+.section-carton-text {
+  margin-top: 2em;
+  padding: 2em;
+}
+.section-carton-text__area {
+  padding: 1em;
+  flex-wrap: wrap;
+}
+.section-carton-text__area--one {
+  background-color: #fff;
+  border-radius: 1em;
+  width: 100%;
+  padding: 0.8em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+  box-shadow: 0 0px 10px 1px black;
+}
+.section-carton-text__area--one-p {
+  color: black;
+  font-weight: normal;
+  font-size: 0.7em;
+  padding-top: 2em;
+  text-align: left;
+}
+.section-carton-text__area--circle {
+  background-color: #f1900e;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+.section-carton-text__area--circle p {
+  color: white;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.section-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  text-align: center;
+  background-image: url(../img/forest_small.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.section-img-dark {
+  position: absolute;
+  top: 0;
+  display: flex;
+  max-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+@media (min-width: 420px) {
+  .hero-box {
+    margin-right: auto;
+    padding-left: 5em;
+  }
+  .hero-box-text {
+    width: 15em;
+  }
+  .hero-box-text h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 768px) {
+  .hero-box-text {
+    width: 25em;
+  }
+  .hero-box-text h1 {
+    font-size: 3.5em;
+  }
+}
+@media (min-width: 992px) {
+  .hero-img {
+    background-image: url(../img/header_big.jpg);
+  }
+  .hero-box-text {
+    width: 25em;
+  }
+  .hero-box-text h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-box-text {
+    width: 30em;
+  }
+  .hero-box-text h1 {
+    font-size: 5em;
+  }
+}/*# sourceMappingURL=style.css.map */
