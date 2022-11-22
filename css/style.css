@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Playfair Display", sans-serif;
   color: white;
+  background-color: #f2f2f2;
 }
 
 .header .hero-img {
@@ -67,7 +68,6 @@ body {
   min-height: 100vh;
   width: 100%;
   color: #32323b;
-  background-color: #f2f2f2;
 }
 .section-box img {
   overflow: hidden;
@@ -79,6 +79,7 @@ body {
   font-size: 2em;
 }
 .section-carton {
+  display: flex;
   font-size: 2em;
   font-weight: bold;
   color: white;
@@ -131,14 +132,87 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+.section-img-bottom {
+  max-height: 210vh;
+  background-image: url(../img/canyon-small.jpg);
+}
 .section-img-dark {
   position: absolute;
   top: 0;
   display: flex;
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
+}
+.section-img-dark--bottom {
+  height: 210vh;
+}
+.section-article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+.section-article--special {
+  margin-top: 80em;
+}
+.section-article img {
+  height: 8em;
+}
+.section-article h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.section-article p {
+  font-size: 1.5em;
+  padding: 1em;
+  line-height: 1.7em;
+}
+.section-wrapper {
+  z-index: 3;
+  color: white;
+}
+.section-wrapper h3 {
+  font-weight: bold;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  padding: 1em;
+}
+.section-wrapper-boxes {
+  flex-wrap: wrap;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 2em;
+}
+.section-wrapper-boxes-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section-wrapper-boxes-btn:hover {
+  background-color: white;
+  color: black;
+}
+.section-wrapper-boxes--last {
+  padding-bottom: 15em;
+}
+.section-wrapper-boxes h4 {
+  font-size: 2em;
+  padding: 1em;
+}
+.section-wrapper-boxes p {
+  font-size: 1.5em;
 }
 
 @media (min-width: 420px) {
