@@ -177,7 +177,7 @@ body {
         z-index: 1;
 
         &-bottom {
-            max-height: 210vh;
+            max-height: 180vh;
             background-image: url(../img/canyon-small.jpg);
         }
 
@@ -185,13 +185,13 @@ body {
             position: absolute;
             top: 0;
             display: flex;
-            height: 100vh;
+            max-height: 100vh;
             width: 100%;
             background-color: rgba(0, 0, 0, .7);
             z-index: 2;
 
             &--bottom {
-                height: 210vh;
+                min-height: 180vh;
             }
         }
 
@@ -199,7 +199,7 @@ body {
 
 
     &-article {
-        position: relative;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -207,7 +207,7 @@ body {
         padding: 2em;
 
         &--special {
-            margin-top: 80em;
+            margin-top: 2em;
         }
 
         img {
@@ -281,6 +281,38 @@ body {
 
         }
     }
+
+}
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #727272;
+    font-size: 1.8em;
+
+    &-box {
+        font-size: 1em;
+        margin: auto;
+        text-align: center;
+
+        p {
+            font-size: 1.2em;
+        }
+
+        &-imgs {
+
+            &-img {
+                padding: 0.2em;
+                width: 2.5em;
+                height: 2.5em;
+            }
+        }
+    }
 }
 
 
@@ -304,6 +336,7 @@ body {
             }
         }
     }
+
 }
 
 
@@ -321,6 +354,8 @@ body {
             }
         }
     }
+
+
 }
 
 @media(min-width: 992px) {
